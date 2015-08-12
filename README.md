@@ -17,6 +17,13 @@ finally run `./main` to see the ultimate answer:
     42
 
 ## go programs
+
+this example features a minimal webserver. It can show a "Hello 
+World" message on port 8080.
+To start the Server use:
+    
+    go run helloworld.go
+
 ## qt program
 
 this example features a qt5 console application `console`:
