@@ -33,6 +33,7 @@ run simpleCurl by running `python simpleCurl http://test.de`
 it will output the html of http://test.de
 
 # questions
+* pick 3 of the examples above and build the software as described using `nix-shell` and run the programs to see that they work
 * use `nix-shell -p clang` (instead of using nix-shell with default.nix) and compile the cpp program+library example using llvm instead of gcc
 * when you compile the `cpp program with custom library`, can you still run the program from a different environment where you don't use nix-shell prior execution? also try this for the `python` example above and compare the results!
 * what is the effect of running `nix-shell --pure` in one shell vs. running `nix-shell` in a second shell? use the `export` command in either to see what parameters changed. use https://www.diffchecker.com/diff to compare the values you obtained
