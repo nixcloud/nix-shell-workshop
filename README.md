@@ -17,6 +17,15 @@ finally run `./main` to see the ultimate answer:
     42
 
 ## go programs
+
+this example features a minimal webserver. It shows a "Hello 
+World" html page on port 8080.
+To start the Server run:
+
+    cd goexample
+    nix-shell    
+    go run helloworld.go
+
 ## qt program
 
 this example features a qt5 console application `console`:
