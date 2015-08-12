@@ -1,0 +1,2 @@
+int mylib(int i); 
+
