@@ -48,7 +48,12 @@ run simpleCurl by running `python simpleCurl http://test.de`
 it will output the html of http://test.de
 
 ## rust
-Enter the environment by typing `nix-shell` in `./rust-programs`.
+enter the environment by typing `nix-shell` in `./rust-programs`.
+
+afterwards run `hello-rust` and see the output:
+
+Hello, world!
+
 
 # questions
 * pick 3 of the examples above and build the software as described using `nix-shell` and run the programs to see that they work
