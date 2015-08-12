@@ -18,10 +18,12 @@ finally run `./main` to see the ultimate answer:
 
 ## go programs
 
-this example features a minimal webserver. It can show a "Hello 
-World" message on port 8080.
-To start the Server use:
-    
+this example features a minimal webserver. It shows a "Hello 
+World" html page on port 8080.
+To start the Server run:
+
+    cd goexample
+    nix-shell    
     go run helloworld.go
 
 ## qt program
