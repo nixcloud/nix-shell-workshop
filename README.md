@@ -1,4 +1,4 @@
-# nix-shell workshop 
+# nix-shell workshop
 
 ## normal c programs
 
@@ -16,3 +16,6 @@ finally run `./main` to see the ultimate answer:
 ## qt programs
 ## perl
 ## python
+enter environment by typing `nix-shell` in ./python-program
+run simpleCurl by running `python simpleCurl http://test.de`
+it will output the html of http://test.de
