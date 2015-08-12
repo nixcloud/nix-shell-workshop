@@ -27,6 +27,12 @@ run `qmake` and `make` to generate the console binary. finally run `./console` t
     hello beautiful world, from #cccamp2015! 
 
 ## perl
+
+run `cd perl` and inside there run `nix-shell -p perlPackages.WWWCurl -p perl`, afterwards run
+`./www_curl_easy.pl` and see strange gibberish strings coming to stdout - ooooohhh what is that?
+
+note: no danger for your system, just carry on, there is much to see!
+
 ## python
 enter environment by typing `nix-shell` in ./python-program
 run simpleCurl by running `python simpleCurl http://test.de`
