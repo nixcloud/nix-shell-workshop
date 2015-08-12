@@ -47,6 +47,9 @@ enter environment by typing `nix-shell` in ./python-program
 run simpleCurl by running `python simpleCurl http://test.de`
 it will output the html of http://test.de
 
+## rust
+Enter the environment by typing `nix-shell` in `./rust-programs`.
+
 # questions
 * pick 3 of the examples above and build the software as described using `nix-shell` and run the programs to see that they work
 * is `nix-shell` limited to run exclusivly on NixOS or can it be used on other platforms as well? 
