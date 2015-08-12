@@ -71,3 +71,6 @@ afterwards run `hello-rust` and see the output:
 # documentation
 * https://nixos.org/wiki/Development_Environments
 * http://blog.lastlog.de/posts/developing_software_using_nixos/
+
+# license
+please feel free to copy as this repo is public domain
