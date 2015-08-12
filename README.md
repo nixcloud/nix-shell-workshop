@@ -52,7 +52,7 @@ enter the environment by typing `nix-shell` in `./rust-programs`.
 
 afterwards run `hello-rust` and see the output:
 
-Hello, world!
+    Hello, world!
 
 
 # questions
