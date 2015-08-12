@@ -17,7 +17,15 @@ finally run `./main` to see the ultimate answer:
     42
 
 ## go programs
-## qt programs
+## qt program
+
+this example features a qt5 console application `console`:
+
+run `cd qt-program` and `nix-shell` to get a qt5 including environment. afterwards
+run `qmake` and `make` to generate the console binary. finally run `./console` to obtain:
+
+    hello beautiful world, from #cccamp2015! 
+
 ## perl
 ## python
 enter environment by typing `nix-shell` in ./python-program
