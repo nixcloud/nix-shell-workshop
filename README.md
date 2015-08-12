@@ -34,6 +34,7 @@ it will output the html of http://test.de
 
 # questions
 * pick 3 of the examples above and build the software as described using `nix-shell` and run the programs to see that they work
+* is `nix-shell` limited to run exclusivly on NixOS or can it be used on other platforms as well? 
 * why does the `cpp program with custom library` find the `mylib.so`, as for instance, pkg-config is not used at all?
 * use `nix-shell -p clang` (instead of using nix-shell with default.nix) and compile the cpp program+library example using llvm instead of gcc
 * when you compile the `cpp program with custom library`, can you still run the program from a different environment where you don't use nix-shell prior execution? also try this for the `python` example above and compare the results!
