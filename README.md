@@ -62,6 +62,7 @@ afterwards run `hello-rust` and see the output:
 * is `nix-shell` limited to run exclusivly on NixOS or can it be used on other platforms as well? 
 * why does the `cpp program with custom library` find the `mylib.so`, as for instance, pkg-config is not used at all?
 * use `nix-shell -p clang` (instead of using nix-shell with default.nix) and compile the cpp program+library example using llvm's `clang++` instead of `g++`
+* you probably noticed that when you use `nix-shell -p clang` that it ignores `default.nix` and does not build mylib and thus you have to modify the Makefiles of the library and main program to get it working but there is a different approach. that is: use a different standard environment or stdenv for short. see `default-clang.nix` where `clangStdenv` is used instead of `stdenv`
 * when you compile the `cpp program with custom library`, can you still run the program from a different environment where you don't use nix-shell prior execution? also try this for the `python` example above and compare the results!
 * write a `default.nix` for the `perl` example, so that you don't need to pass -p on the shell anymore
 * what is the effect of running `nix-shell --pure` in one shell vs. running `nix-shell` in a second shell? use the `export` command in either to see what parameters changed. use https://www.diffchecker.com/diff to compare the values you obtained
