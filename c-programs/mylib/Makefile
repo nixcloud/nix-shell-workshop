@@ -1,7 +1,7 @@
 all :
-	g++ -c mylib.cpp -o mylib.o
+	c++ -c mylib.cpp -o mylib.o
 	ar rvs libmylib.a mylib.o
-	g++ -shared -o libmylib.so -fPIC mylib.cpp
+	c++ -shared -o libmylib.so -fPIC mylib.cpp
 
 install :
 	cp libmylib.a ${prefix}/lib
