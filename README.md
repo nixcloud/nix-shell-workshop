@@ -68,12 +68,12 @@ afterwards run `hello-rust` and see the output:
 * what is the effect of running `nix-shell --pure` in one shell vs. running `nix-shell` in a second shell? use the `export` command in either to see what parameters changed. use https://www.diffchecker.com/diff to compare the values you obtained
 * issue `nix-env -qaP | grep python` and see that there is python 2.x and 3.x; you can filter the search further using `| grep -v foo` to filter out all lines containing 'foo'. figure out how to get a nix-shell with python 2.x and one with python 3.x, issue `python --version` to verify that you got the right version!
 * nix-shell can be used with a local checkout of nixpkgs, `nix-shell -I nixpkgs=/foo/bar/nixpkgs --pure -p cmake`, therefore clone nixpkgs 'master' from https://github.com/nixos/nixpkgs and issue the above command. compare the result to `nix-shell -I nixpkgs=/foo/bar/nixpkgs --pure -p cmake` in regards to amount of downloads/ build targets and compare the two outcomes
-* what is the major difference between using `nix-shell` and `myEnvFun`, read http://blog.lastlog.de/posts/developing_software_using_nixos/ to learn about myEnvFun. afterwards adapt the `cpp program with custom library` to use myEnvFun instead of `nix-shell` 
+* what is the major difference between using `nix-shell` and `myEnvFun`, read https://lastlog.de/blog/posts/developing_software_using_nixos.html to learn about myEnvFun. afterwards adapt the `cpp program with custom library` to use myEnvFun instead of `nix-shell` 
 * play with persistent `nix-shell` environments, see https://nixos.org/wiki/Development_Environments#Making_a_Persistent_nix-shell_Environment
 
 # documentation
 * https://nixos.org/wiki/Development_Environments
-* http://blog.lastlog.de/posts/developing_software_using_nixos/
+* https://lastlog.de/blog/posts/developing_software_using_nixos.html
 
 # license
 please feel free to copy as this repo is public domain
