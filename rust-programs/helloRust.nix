@@ -1,4 +1,4 @@
-{ stdenv, rustPlatform, cargo }:
+{ stdenv, cargo, rustc }:
 
 stdenv.mkDerivation rec {
 
@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
 
   src = ./hello;
 
-  buildInputs = [ rustPlatform.rustc cargo ];
+  buildInputs = [ rustc cargo ];
 
   buildPhase = ''
     cargo build --release
